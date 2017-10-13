@@ -31,46 +31,107 @@ public class Calculatrice extends AppCompatActivity {
                 case "Enter":
                     val = Float.parseFloat(input.getText().toString());
                     stack.push(val);
-                    if (stack.size() >= 1)
-                        pile0.setText(Float.toString(stack.elementAt(0)));
-                    if (stack.size() >= 2)
-                        pile1.setText(Float.toString(stack.elementAt(1)));
-                    if (stack.size() >= 3)
-                        pile2.setText(Float.toString(stack.elementAt(2)));
-                    if (stack.size() >= 4)
-                        pile3.setText(Float.toString(stack.elementAt(3)));
+                    if (stack.size() >= 1) {
+                        pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
+                    } else {
+                        pile0.setText("");
+                    }
+                    if (stack.size() >= 2) {
+                        pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
+                    } else {
+                        pile1.setText("");
+                    }
+                    if (stack.size() >= 3) {
+                        pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
+                    } else {
+                        pile2.setText("");
+                    }
+                    if (stack.size() >= 4) {
+                        pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
+                    } else {
+                        pile3.setText("");
+                    }
                     input.setText("");
                     break;
-                case "pop":
+                case "Pop":
                     if (!stack.empty())
                         stack.pop();
-                    pile0.setText(Float.toString(stack.elementAt(0)));
-                    pile1.setText(Float.toString(stack.elementAt(1)));
-                    pile2.setText(Float.toString(stack.elementAt(2)));
-                    pile3.setText(Float.toString(stack.elementAt(3)));
+
+                    if (stack.size() >= 1) {
+                        pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
+                    } else {
+                        pile0.setText("");
+                    }
+                    if (stack.size() >= 2) {
+                        pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
+                    } else {
+                        pile1.setText("");
+                    }
+                    if (stack.size() >= 3) {
+                        pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
+                    } else {
+                        pile2.setText("");
+                    }
+                    if (stack.size() >= 4) {
+                        pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
+                    } else {
+                        pile3.setText("");
+                    }
                     input.setText("");
                     break;
-                case "swap":
+                case "Swap":
                     if (stack.size() >= 2) {
                         temp1 = stack.pop();
                         temp2 = stack.pop();
-                        stack.push(temp2);
                         stack.push(temp1);
-                        pile0.setText(Float.toString(stack.elementAt(0)));
-                        pile1.setText(Float.toString(stack.elementAt(1)));
-                        pile2.setText(Float.toString(stack.elementAt(2)));
-                        pile3.setText(Float.toString(stack.elementAt(3)));
+                        stack.push(temp2);
+                        if (stack.size() >= 1) {
+                            pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
+                        } else {
+                            pile0.setText("");
+                        }
+                        if (stack.size() >= 2) {
+                            pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
+                        } else {
+                            pile1.setText("");
+                        }
+                        if (stack.size() >= 3) {
+                            pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
+                        } else {
+                            pile2.setText("");
+                        }
+                        if (stack.size() >= 4) {
+                            pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
+                        } else {
+                            pile3.setText("");
+                        }
                         input.setText("");
                     }
                     break;
-                case "clear":
+                case "Clear":
                     while (!stack.empty()) {
                         stack.pop();
                     }
-                    pile0.setText(Float.toString(stack.elementAt(0)));
-                    pile1.setText(Float.toString(stack.elementAt(1)));
-                    pile2.setText(Float.toString(stack.elementAt(2)));
-                    pile3.setText(Float.toString(stack.elementAt(3)));
+                    if (stack.size() >= 1) {
+                        pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
+                    } else {
+                        pile0.setText("");
+                    }
+                    if (stack.size() >= 2) {
+                        pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
+                    } else {
+                        pile1.setText("");
+                    }
+                    if (stack.size() >= 3) {
+                        pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
+                    } else {
+                        pile2.setText("");
+                    }
+                    if (stack.size() >= 4) {
+                        pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
+                    } else {
+                        pile3.setText("");
+                    }
                     input.setText("");
                     break;
                 case "+":
@@ -85,22 +146,22 @@ public class Calculatrice extends AppCompatActivity {
                     }
                     //mise à jour de l'affichage
                     if (stack.size() >= 1) {
-                        pile0.setText(Float.toString(stack.elementAt(0)));
+                        pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
                     } else {
                         pile0.setText("");
                     }
                     if (stack.size() >= 2) {
-                        pile1.setText(Float.toString(stack.elementAt(1)));
+                        pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
                     } else {
                         pile1.setText("");
                     }
                     if (stack.size() >= 3) {
-                        pile2.setText(Float.toString(stack.elementAt(2)));
+                        pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
                     } else {
                         pile2.setText("");
                     }
                     if (stack.size() >= 4) {
-                        pile3.setText(Float.toString(stack.elementAt(3)));
+                        pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
                     } else {
                         pile3.setText("");
                     }
@@ -108,10 +169,100 @@ public class Calculatrice extends AppCompatActivity {
                     //fin de la mise à jour de l'affichage
                     break;
                 case "-":
+                    if (!input.getText().toString().equals("")) {
+                        val = Float.parseFloat(input.getText().toString());
+                        stack.push(val);
+                    }
+                    if (stack.size() >= 2) {
+                        temp1 = stack.pop();
+                        temp2 = stack.pop();
+                        stack.push(temp1 - temp2);
+                    }
+                    if (stack.size() >= 1) {
+                        pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
+                    } else {
+                        pile0.setText("");
+                    }
+                    if (stack.size() >= 2) {
+                        pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
+                    } else {
+                        pile1.setText("");
+                    }
+                    if (stack.size() >= 3) {
+                        pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
+                    } else {
+                        pile2.setText("");
+                    }
+                    if (stack.size() >= 4) {
+                        pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
+                    } else {
+                        pile3.setText("");
+                    }
+                    input.setText("");
                     break;
                 case "*":
+                    if (!input.getText().toString().equals("")) {
+                        val = Float.parseFloat(input.getText().toString());
+                        stack.push(val);
+                    }
+                    if (stack.size() >= 2) {
+                        temp1 = stack.pop();
+                        temp2 = stack.pop();
+                        stack.push(temp1 * temp2);
+                    }
+                    if (stack.size() >= 1) {
+                        pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
+                    } else {
+                        pile0.setText("");
+                    }
+                    if (stack.size() >= 2) {
+                        pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
+                    } else {
+                        pile1.setText("");
+                    }
+                    if (stack.size() >= 3) {
+                        pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
+                    } else {
+                        pile2.setText("");
+                    }
+                    if (stack.size() >= 4) {
+                        pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
+                    } else {
+                        pile3.setText("");
+                    }
+                    input.setText("");
                     break;
                 case "/":
+                    if (!input.getText().toString().equals("")) {
+                        val = Float.parseFloat(input.getText().toString());
+                        stack.push(val);
+                    }
+                    if (stack.size() >= 2) {
+                        temp1 = stack.pop();
+                        temp2 = stack.pop();
+                        stack.push(temp1 / temp2);
+                    }
+                    if (stack.size() >= 1) {
+                        pile0.setText(Float.toString(stack.elementAt(stack.size()-1)));
+                    } else {
+                        pile0.setText("");
+                    }
+                    if (stack.size() >= 2) {
+                        pile1.setText(Float.toString(stack.elementAt(stack.size()-2)));
+                    } else {
+                        pile1.setText("");
+                    }
+                    if (stack.size() >= 3) {
+                        pile2.setText(Float.toString(stack.elementAt(stack.size()-3)));
+                    } else {
+                        pile2.setText("");
+                    }
+                    if (stack.size() >= 4) {
+                        pile3.setText(Float.toString(stack.elementAt(stack.size()-4)));
+                    } else {
+                        pile3.setText("");
+                    }
+                    input.setText("");
                     break;
                 default:
                     input.setText(input.getText().toString() + ((Button) v).getText());
