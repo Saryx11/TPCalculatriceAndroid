@@ -2,56 +2,47 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentRight="true"
-    android:layout_centerHorizontal="true"
-    android:layout_centerInParent="true"
-    android:layout_centerVertical="true"
-    android:alignmentMode="alignBounds"
     android:columnCount="4"
     android:rowCount="10"
     android:visibility="visible">
 
     <TextView
-        android:id="@+id/Pile3"
+        android:id="@+id/pile3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
-        android:layout_rowWeight="0.75"
         android:background="@android:color/holo_orange_light"
          />
 
     <TextView
-        android:id="@+id/Pile2"
+        android:id="@+id/pile2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
-        android:layout_rowWeight="0.75"
         android:background="@android:color/holo_orange_light"
          />
 
     <TextView
-        android:id="@+id/Pile1"
+        android:id="@+id/pile1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
-        android:layout_rowWeight="0,75"
         android:background="@android:color/holo_orange_light"
          />
 
     <TextView
-        android:id="@+id/Pile0"
+        android:id="@+id/pile0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
-        android:layout_rowWeight="0,75"
         android:background="@android:color/holo_orange_light"
         />
 
     <TextView
-        android:id="@+id/Input"
+        android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
@@ -66,7 +57,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/background_light"
         android:text="@string/one" />
 
@@ -76,7 +66,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/background_light"
         android:text="@string/two" />
 
@@ -86,7 +75,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/background_light"
         android:text="@string/three" />
 
@@ -96,7 +84,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/plus" />
 
@@ -106,7 +93,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/background_light"
         android:text="@string/four" />
 
@@ -116,7 +102,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/background_light"
         android:text="@string/five" />
 
@@ -126,7 +111,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/background_light"
         android:text="@string/six" />
 
@@ -136,7 +120,6 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:layout_weight="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/mult" />
 

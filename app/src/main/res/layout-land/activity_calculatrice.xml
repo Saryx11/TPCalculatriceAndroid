@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center">
-
-    <GridLayout
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -20,7 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
-            android:text="TextView"
             android:layout_columnSpan="4" />
 
         <TextView
@@ -28,7 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
-            android:text="TextView"
             android:layout_columnSpan="4" />
 
         <TextView
@@ -36,8 +28,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
-
-            android:text="TextView"
             android:layout_columnSpan="4" />
 
         <TextView
@@ -45,8 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_orange_light"
-
-            android:text="TextView"
             android:layout_columnSpan="4" />
 
         <TextView
@@ -54,15 +42,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
-
-            android:text="TextView"
             android:layout_columnSpan="4" />
 
         <Button
             android:id="@+id/one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/one"
             android:layout_columnSpan="1" />
@@ -71,7 +56,6 @@
             android:id="@+id/two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/two"
             android:layout_columnSpan="1" />
@@ -80,8 +64,6 @@
             android:id="@+id/three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
             android:background="@android:color/background_light"
             android:text="@string/three"
             android:layout_columnSpan="1" />
@@ -90,7 +72,6 @@
             android:id="@+id/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/holo_blue_dark"
             android:text="@string/plus"
             android:layout_columnSpan="1" />
@@ -99,17 +80,14 @@
             android:id="@+id/four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/four"
-
             android:layout_columnSpan="1" />
 
         <Button
             android:id="@+id/five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/five"
             android:layout_columnSpan="1"/>
@@ -118,7 +96,6 @@
             android:id="@+id/six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/six"
             android:layout_columnSpan="1" />
@@ -127,7 +104,6 @@
             android:id="@+id/mult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/holo_blue_dark"
             android:text="@string/mult"
             android:layout_columnSpan="1" />
@@ -136,7 +112,6 @@
             android:id="@+id/seven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/seven"
             android:layout_columnSpan="1" />
@@ -145,7 +120,6 @@
             android:id="@+id/eight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/eight"
             android:layout_columnSpan="1" />
@@ -154,7 +128,6 @@
             android:id="@+id/nine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/background_light"
             android:text="@string/nine"
             android:layout_columnSpan="1" />
@@ -163,7 +136,6 @@
             android:id="@+id/divide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/holo_blue_dark"
             android:text="@string/divide"
             android:layout_columnSpan="1" />
@@ -189,8 +161,6 @@
             android:id="@+id/clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
             android:background="@android:color/holo_blue_dark"
             android:text="@string/clear"
             android:layout_columnSpan="1" />
@@ -199,7 +169,6 @@
             android:id="@+id/pop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/holo_blue_dark"
             android:text="@string/pop"
             android:layout_columnSpan="1" />
@@ -208,7 +177,6 @@
             android:id="@+id/swap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@android:color/holo_blue_dark"
             android:text="@string/swap"
             android:layout_columnSpan="1" />
@@ -217,12 +185,9 @@
             android:id="@+id/enter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:background="@color/colorAccent"
             android:text="@string/enter"
             android:layout_columnSpan="1" />
 
     </GridLayout>
-
-</LinearLayout>
 
