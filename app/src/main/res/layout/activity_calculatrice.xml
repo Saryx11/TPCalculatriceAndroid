@@ -15,50 +15,50 @@
     android:visibility="visible">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Pile3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:layout_rowWeight="0.75"
+        android:background="@android:color/holo_orange_light"
+         />
+
+    <TextView
+        android:id="@+id/Pile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:layout_rowWeight="0.75"
+        android:background="@android:color/holo_orange_light"
+         />
+
+    <TextView
+        android:id="@+id/Pile1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
         android:layout_rowWeight="0,75"
         android:background="@android:color/holo_orange_light"
-        android:text="TextView" />
+         />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/Pile0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
         android:layout_rowWeight="0,75"
         android:background="@android:color/holo_orange_light"
-        android:text="TextView" />
+        />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:layout_rowWeight="0,75"
-        android:background="@android:color/holo_orange_light"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:layout_rowWeight="0,5"
-        android:background="@android:color/holo_orange_light"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
         android:layout_rowSpan="1"
         android:layout_rowWeight="1"
         android:background="@android:color/darker_gray"
-        android:text="TextView" />
+        />
 
     <Button
         android:id="@+id/one"
