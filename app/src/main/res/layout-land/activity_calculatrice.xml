@@ -1,193 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/grid"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignBounds"
+    android:columnCount="5"
+    android:rowCount="6">
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/one" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/two" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/three" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/plus" />
+
+    <TextView
+
+        android:id="@+id/pile3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:alignmentMode="alignBounds"
-        android:columnCount="4"
-        android:rowCount="10">
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
-        <TextView
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/four" />
 
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
-            android:layout_columnSpan="4" />
+    <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/five" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
-            android:layout_columnSpan="4" />
+    <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/six" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
-            android:layout_columnSpan="4" />
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/mult" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_orange_light"
-            android:layout_columnSpan="4" />
+    <TextView
+        android:id="@+id/pile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:layout_columnSpan="4" />
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/seven" />
 
-        <Button
-            android:id="@+id/one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/one"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/eight" />
 
-        <Button
-            android:id="@+id/two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/two"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/background_light"
+        android:text="@string/nine" />
 
-        <Button
-            android:id="@+id/three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/three"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/divide" />
 
-        <Button
-            android:id="@+id/plus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/plus"
-            android:layout_columnSpan="1" />
+    <TextView
+        android:id="@+id/pile1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
-        <Button
-            android:id="@+id/four"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/four"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="3"
+        android:background="@android:color/background_light"
+        android:text="@string/zero" />
 
-        <Button
-            android:id="@+id/five"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/five"
-            android:layout_columnSpan="1"/>
-        
-        <Button
-            android:id="@+id/six"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/six"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/minus" />
 
-        <Button
-            android:id="@+id/mult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/mult"
-            android:layout_columnSpan="1" />
+    <TextView
+        android:id="@+id/pile0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
-        <Button
-            android:id="@+id/seven"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/seven"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/clear" />
 
-        <Button
-            android:id="@+id/eight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/eight"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/pop" />
 
-        <Button
-            android:id="@+id/nine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/nine"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/swap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/swap" />
 
-        <Button
-            android:id="@+id/divide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/divide"
-            android:layout_columnSpan="1" />
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:background="@color/colorAccent"
+        android:text="@string/enter" />
 
-        <Button
-            android:id="@+id/zero"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
-            android:text="@string/zero"
-            android:layout_columnSpan="3" 
-            android:layout_columnWeight="3"/>
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="fill"/>
 
-        <Button
-            android:id="@+id/minus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/minus"
-            android:layout_columnSpan="1" />
-
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/clear"
-            android:layout_columnSpan="1" />
-
-        <Button
-            android:id="@+id/pop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/pop"
-            android:layout_columnSpan="1" />
-
-        <Button
-            android:id="@+id/swap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            android:text="@string/swap"
-            android:layout_columnSpan="1" />
-
-        <Button
-            android:id="@+id/enter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-            android:text="@string/enter"
-            android:layout_columnSpan="1" />
-
-    </GridLayout>
+</GridLayout>
 

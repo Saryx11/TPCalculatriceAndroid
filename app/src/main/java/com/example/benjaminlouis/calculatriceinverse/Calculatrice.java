@@ -13,7 +13,16 @@ import org.w3c.dom.Text;
 import java.util.Stack;
 
 public class Calculatrice extends AppCompatActivity {
+
     private Stack<Float> stack = new Stack<Float>();
+
+    /*View.OnClickListener clicChiffre=new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            input.setText(input.getText().toString() + ((Button) v).getText());
+        }
+    };*/
+
     View.OnClickListener clicBouton = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -288,4 +297,29 @@ public class Calculatrice extends AppCompatActivity {
 
 
     }
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        ((TextView)findViewById(R.id.pile0)).setText(savedInstanceState.getString("pile0"));
+        ((TextView)findViewById(R.id.pile1)).setText(savedInstanceState.getString("pile1"));
+        ((TextView)findViewById(R.id.pile2)).setText(savedInstanceState.getString("pile2"));
+        ((TextView)findViewById(R.id.pile3)).setText(savedInstanceState.getString("pile3"));
+        float[] floats=savedInstanceState.getFloatArray("floats");
+        for(float f:floats){
+            stack.push(f);
+        }
+
+    };
+    protected void onSaveInstanceState(Bundle outState){
+        outState.putString("pile0",((TextView)findViewById(R.id.pile0)).getText().toString());
+        outState.putString("pile1",((TextView)findViewById(R.id.pile1)).getText().toString());
+        outState.putString("pile2",((TextView)findViewById(R.id.pile2)).getText().toString());
+        outState.putString("pile3",((TextView)findViewById(R.id.pile3)).getText().toString());
+        int i=0;
+        float[] floats=new float[stack.size()];
+        for(Float f:stack){
+            floats[i]=f;
+            i++;
+        }
+        outState.putFloatArray("floats",floats);
+
+    };
 }
