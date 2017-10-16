@@ -1,62 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/grid"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:columnCount="4"
-    android:rowCount="10"
-    android:visibility="visible">
-
-    <TextView
-        android:id="@+id/pile3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:background="@android:color/holo_orange_light"
-         />
-
-    <TextView
-        android:id="@+id/pile2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:background="@android:color/holo_orange_light"
-         />
-
-    <TextView
-        android:id="@+id/pile1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:background="@android:color/holo_orange_light"
-         />
-
-    <TextView
-        android:id="@+id/pile0"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:background="@android:color/holo_orange_light"
-        />
-
-    <TextView
-        android:id="@+id/input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
-        android:layout_rowSpan="1"
-        android:layout_rowWeight="1"
-        android:background="@android:color/darker_gray"
-        />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignBounds"
+    android:columnCount="5"
+    android:rowCount="6">
 
     <Button
         android:id="@+id/one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/one" />
 
@@ -64,8 +20,7 @@
         android:id="@+id/two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/two" />
 
@@ -73,8 +28,7 @@
         android:id="@+id/three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/three" />
 
@@ -82,17 +36,23 @@
         android:id="@+id/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/plus" />
+
+    <TextView
+
+        android:id="@+id/pile3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
     <Button
         android:id="@+id/four"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/four" />
 
@@ -100,8 +60,7 @@
         android:id="@+id/five"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/five" />
 
@@ -109,8 +68,7 @@
         android:id="@+id/six"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/six" />
 
@@ -118,17 +76,22 @@
         android:id="@+id/mult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/mult" />
+
+    <TextView
+        android:id="@+id/pile2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
     <Button
         android:id="@+id/seven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/seven" />
 
@@ -136,8 +99,7 @@
         android:id="@+id/eight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/eight" />
 
@@ -145,8 +107,7 @@
         android:id="@+id/nine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/background_light"
         android:text="@string/nine" />
 
@@ -154,10 +115,16 @@
         android:id="@+id/divide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/divide" />
+
+    <TextView
+        android:id="@+id/pile1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
     <Button
         android:id="@+id/zero"
@@ -165,26 +132,29 @@
         android:layout_height="wrap_content"
         android:layout_columnSpan="3"
         android:layout_columnWeight="3"
-        android:layout_rowWeight="1"
         android:background="@android:color/background_light"
-        android:lineSpacingExtra="0sp"
         android:text="@string/zero" />
 
     <Button
         android:id="@+id/minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/minus" />
+
+    <TextView
+        android:id="@+id/pile0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="fill"/>
 
     <Button
         android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/clear" />
 
@@ -192,8 +162,7 @@
         android:id="@+id/pop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/pop" />
 
@@ -201,8 +170,7 @@
         android:id="@+id/swap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@android:color/holo_blue_dark"
         android:text="@string/swap" />
 
@@ -210,10 +178,16 @@
         android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
+        android:layout_columnSpan="1"
         android:background="@color/colorAccent"
         android:text="@string/enter" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="fill"/>
 
 </GridLayout>
 
